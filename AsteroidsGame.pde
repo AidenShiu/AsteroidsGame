@@ -39,10 +39,11 @@ public void keyPressed(){
     accelerate = true;
   }
   if (keyCode == 16){
-    bob.myCenterX = (int)(Math.random()*500);
-    bob.myCenterY = (int)(Math.random()*500);
-    bob.myXspeed = 0;
-    bob.myYspeed = 0;
+    double newCenter = (Math.random()*500);
+    bob.setmyCenterX(newCenter);
+    bob.setmyCenterY(newCenter);
+    bob.setmyXspeed(0);
+    bob.setmyYspeed(0);
     bob.myPointDirection = (int)(Math.random()*360);
   } 
 }
