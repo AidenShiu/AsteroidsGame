@@ -1,9 +1,7 @@
 Spaceship bob;
 Star [] sue = new Star[200];
 boolean right, left, accelerate;
-
 ArrayList <Asteroid> body = new ArrayList <Asteroid>();
-
 void setup(){
   size(500, 500);
   bob = new Spaceship();
@@ -14,7 +12,6 @@ void setup(){
     body.add(new Asteroid());
   }  
 }
-
 void draw(){
   background(0);
   for (int i = 1; i < sue.length-1; i++){
@@ -41,7 +38,6 @@ void draw(){
     }
    }
 }
-
 public void keyPressed(){
   if (keyCode == 37){
     left = true;
@@ -60,7 +56,6 @@ public void keyPressed(){
     bob.myPointDirection = (int)(Math.random()*360);
   } 
 }
-
 public void keyReleased(){
   if (keyCode == 37){
     left = false;
